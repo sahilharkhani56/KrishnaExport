@@ -39,20 +39,20 @@ const Footer = () => {
           <Item sx={{background:'#F6F5F2', boxShadow:'none'}}>
             <List>
             <Typography variant="h6" style={{marginBottom:4}} sx={{color:'black'}}>IMPORTANT LINKS</Typography>
-                <ListItem sx={{padding:0}} onClick={(e)=>selectOption(e,'/')}><Typography>Home</Typography></ListItem>
-                <ListItem sx={{padding:0}} onClick={(e)=>selectOption(e,'/about')}><Typography>About Us</Typography></ListItem>
-                <ListItem sx={{padding:0}} onClick={(e)=>selectOption(e,'/product')}><Typography>Products</Typography></ListItem>
-                <ListItem sx={{padding:0}} onClick={(e)=>selectOption(e,'/contact')}><Typography>Contact Us</Typography></ListItem>
+                <ListItem sx={{padding:0}} onClick={(e)=>selectOption(e,'/')} className="link"><Typography>Home</Typography></ListItem>
+                <ListItem sx={{padding:0}} onClick={(e)=>selectOption(e,'/about')} className="link"><Typography>About Us</Typography></ListItem>
+                <ListItem sx={{padding:0}} onClick={(e)=>selectOption(e,'/product')} className="link"><Typography>Products</Typography></ListItem>
+                <ListItem sx={{padding:0}} onClick={(e)=>selectOption(e,'/contact')} className="link"><Typography>Contact Us</Typography></ListItem>
             </List>
           </Item>
           <Item sx={{background:'#F6F5F2', boxShadow:'none'}}>
             <List>
             <Typography variant="h6" style={{marginBottom:4}} sx={{color:'black'}}>PRODUCTS</Typography>
-                <ListItem sx={{padding:0}}><Typography>Spices</Typography></ListItem>
-                <ListItem sx={{padding:0}}><Typography>Seeds</Typography></ListItem>
-                <ListItem sx={{padding:0}}><Typography>Herbs</Typography></ListItem>
-                <ListItem sx={{padding:0}}><Typography>Grains</Typography></ListItem>
-                <ListItem sx={{padding:0}}><Typography>Dehydrate Powders</Typography></ListItem>
+                <ListItem sx={{padding:0}} className="link"><Typography>Spices</Typography></ListItem>
+                <ListItem sx={{padding:0}} className="link"><Typography>Seeds</Typography></ListItem>
+                <ListItem sx={{padding:0}} className="link"><Typography>Herbs</Typography></ListItem>
+                <ListItem sx={{padding:0}} className="link"><Typography>Grains</Typography></ListItem>
+                <ListItem sx={{padding:0}}className="link"><Typography>Dehydrate Powders</Typography></ListItem>
             </List>
           </Item>
           <Item sx={{background:'#F6F5F2', boxShadow:'none'}}>

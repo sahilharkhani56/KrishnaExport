@@ -119,10 +119,26 @@ font-weight: 600;
   font-weight: 600;
 }
 
-.itemProduct{
+.itemProduct {
   cursor: pointer;
 }
-
+.link{
+  cursor: pointer;
+}
+.article {
+  height: 180px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  object-fit: contain;
+}
+.imageText{
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
 @media only screen and (max-width: 600px) {
   .nameMain{
     font-size: 30px !important;
@@ -135,6 +151,10 @@ font-weight: 600;
    swiper-container {
     width: 100%;
     height: 70vh;
-    
+  }
+  .imageText{
+    font-size: 50px;
+    color: white;
+    text-align: center;
   }
 }

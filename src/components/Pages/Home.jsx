@@ -7,6 +7,7 @@ import i2 from "../../assets/img/w2seeds.jpeg";
 import i3 from "../../assets/img/w3seeds.jpeg";
 import i4 from "../../assets/img/w4seeds.jpeg";
 import i5 from "../../assets/img/w5seeds.jpeg";
+import Product from "./Product";
 
 const Home = () => {
   return (
@@ -98,6 +99,10 @@ const Home = () => {
           </Typography>
 
         </Box>
+        <Box>
+        </Box>
+        <Divider sx={{marginBottom:2,marginTop:2}}></Divider>
+        <Product></Product>
       </Box>
     </>
   );

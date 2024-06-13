@@ -11,6 +11,7 @@ import Gallery from "./components/Pages/Gallery";
 import Inquiry from "./components/Pages/Inquiry";
 import Product from "./components/Pages/Product";
 import SubProduct from "./components/Pages/SubProduct";
+import { SingleProduct } from "./components/Pages/SingleProduct";
 import { Box } from "@mui/material";
 const App = () => {
  return (<>
@@ -27,6 +28,7 @@ const App = () => {
          <Route path="/inquire" element={<Inquiry />} />
          <Route path="/product" element={<Product />} />
          <Route path="/product/:subproduct" element={<SubProduct />} />
+         <Route path="/product/:subproduct/:productnumber" element={<SingleProduct/>}/>
          {/* <Route path="/" element={<Home />} />
          <Route path="/" element={<Home />} /> */}
          {/* <Route path="/news" element={<News />} /> */}
