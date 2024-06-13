@@ -77,7 +77,7 @@ function Navbar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }} style={{ marginLeft: '60px' }}>
             {navItems.map((item) => (
-              <Button key={item[0]} sx={{ color: '#fff' }} onClick={(e)=>selectOption(e,item[1])}>
+              <Button key={item[0]}  sx={{ color: '#fff' }} onClick={(e)=>selectOption(e,item[1])}>
                 {item[0]}
               </Button>
             ))}

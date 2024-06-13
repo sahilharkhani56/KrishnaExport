@@ -13,6 +13,7 @@ const Home = () => {
     <>
       <Box className="homeswiper">
         <swiper-container
+            className="swiper-container1"
           navigation-next-el=".custom-next-button"
           navigation-prev-el=".custom-prev-button"
           pagination-clickable="true"
@@ -25,19 +26,19 @@ const Home = () => {
             "--swiper-pagination-bullet-size": "15px",
           }}
         >
-          <swiper-slide lazy="true">
-            <img src={i1} loading="lazy" alt="" />
+          <swiper-slide lazy="true"  className="swiper-slide1">
+            <img src={i1} loading="lazy" alt="" className="img1"/>
           </swiper-slide>
 
-          <swiper-slide lazy="true">
-            <img loading="lazy" src={i5} alt="" />
+          <swiper-slide lazy="true" className="swiper-slide1">
+            <img loading="lazy" src={i5} alt="" className="img1"/>
           </swiper-slide>
 
-          <swiper-slide lazy="true">
-            <img loading="lazy" src={i3} alt="" />
+          <swiper-slide lazy="true" className="swiper-slide1">
+            <img loading="lazy" src={i3} alt="" className="img1"/>
           </swiper-slide>
-          <swiper-slide lazy="true">
-            <img loading="lazy" src={i4} alt="" />
+          <swiper-slide lazy="true" className="swiper-slide1">
+            <img loading="lazy" src={i4} alt="" className="img1"/>
           </swiper-slide>
         </swiper-container>
         <div className="nav-btn custom-prev-button">
@@ -95,7 +96,7 @@ const Home = () => {
             understand the diverse tastes and demands of our esteemed clients
             across the globe.
           </Typography>
-          
+
         </Box>
       </Box>
     </>
