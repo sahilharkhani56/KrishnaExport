@@ -14,14 +14,22 @@ import Garlic from '../../assets/img/Dehaydrated Garlic Flakes.jpg'
 import DehOnion from '../../assets/img/Deh Onion.jpeg'
 import DehWhiteOnion from '../../assets/img/White onion flakes.jpg'
 import YellowMustard from '../../assets/img/Yellow Mustard.jpg'
+import CumminSeeds from '../../assets/img/Cumin Seeds.jpg'
+
 import TermericFinger from '../../assets/img/Turmic Finger.jpg'
 import RedChilli from '../../assets/img/chilli.jpg'
 import GreenMillet from '../../assets/img/Green millet.jpg'
 import YelloMaize from '../../assets/img/Yellow Maize.jpg'
 import WhiteMaize from '../../assets/img/White maize.jpg'
 import ChilliFlakes from '../../assets/img/Chilli Flakes.jpg'
+import Cuminpowder from '../../assets/img/Cuminpowder.jpg'
+import Corianderpowder from '../../assets/img/Corianderpowder.png'
+
 import DesiChickpeas from '../../assets/img/Desi Chickpeas.jpg'
 import WhiteChickpeas from '../../assets/img/White Chickpeas.jpg'
+import Kesar from '../../assets/img/kesar.jfif'
+import Alphanso from '../../assets/img/alphonso.jfif'
+
 import ChanaDal from '../../assets/img/Chana Dal.jpg'
 import Onion from '../../assets/img/Onion.jpg'
 import GreenChilli from '../../assets/img/Green Chilli.jpg'
@@ -90,6 +98,14 @@ const product=[
                 "subimage":YellowMustard,
                 "subpath":"/product/seed/6"
 
+            },
+            {
+                "subproductname":"Cummin Seeds " ,
+                "subdescription":"Cumin is the dried seed known for its medicinal properties, mainly produced in India. Cumin is the dried seed of the herb Cuminum cyminum, a member of the parsley family. The cumin plant grows to 30-50 cm (12-20 in) tall and is harvested by hand. It is an annual herbaceous plant, with a slender, glabrous, branched stem that is 20-30 cm (8-12 in) tall and has a diameter of 3-5 cm. ",
+                "subdescriptionshort":"Cumin is the dried seed known for its medicinal properties, mainly produced in India. Cumin is the dried seed of the herb Cuminum cyminum,...",
+                "subimage":CumminSeeds,
+                "subpath":"/product/seed/7"
+
             }
         ]
     },
@@ -125,7 +141,7 @@ const product=[
             {
                 "subproductname":"Red Chilli Powder" ,
                 "subdescription":" Krishna Export offers the best quality red chili powder, which is ideal for preparing a wide variety of cuisines such as curry, sausages, and many more.",
-                "subdescriptionshort":"Krishna Export offers the best quality red chili powder, which is ideal for preparing a wide variety ...",
+                "subdescriptionshort":"Krishna Export offers the best quality red chili powder, which is ideal for preparing a wide variety cuisines such as curry,, sausages, and many more.",
                 "subimage":Redchillipowder,
                 "subpath":"/product/spice/4"
 
@@ -136,6 +152,20 @@ const product=[
                 "subdescriptionshort":" Dried chile flakes, commonly labeled crushed red pepper flakes, are used to top pizza, stir-fries, spicy pastas, and many other dishes. They can ...",
                 "subimage":ChilliFlakes,
                 "subpath":"/product/spice/5"
+            },
+            {
+                "subproductname":"Cummin Powder" ,
+                "subdescription":"Krishna Export is manufacturer and exporter of Cumin Seeds Powder, Ground Cumin.Krishna Export manufactures and exports Cumin Powder, Ground Cumin as per US FDA and ASTA quality standards. We can also supply Roasted Cumin Powder and ETO treated Cumin Powder. Cumin Powder is well known as Jeera Powder. Cumin Powder is prepared by grinding best quality Cumin Seeds.Cumin Powder is used to flavor rice, stuffed vegetables and many other dishes. Krishna Export manufactures and exports best quality Cumin Powder.",
+                "subdescriptionshort":"Krishna Export is manufacturer and exporter of Cumin Seeds Powder, Ground Cumin.Krishna Export manufactures and exports Cumin Powder...",
+                "subimage":Cuminpowder,
+                "subpath":"/product/spice/6"
+            },
+            {
+                "subproductname":"Coriander Powder" ,
+                "subdescription":"Krishna Export is a manufacturer and exporter of coriander seed powder and ground coriander in India.Krishna Export manufactures and exports coriander seed powder and ground coriander as per US FDA and ASTA quality standards and is ETO-treated. Coriander powder is well known as Dhaniya powder. Coriander powder is manufactured by grinding the best-quality coriander seeds. Coriander powder is used to flavor rice, stuffed vegetables, and many other dishes. Krishna Export manufactures and exports best quality Coriander Powder ",
+                "subdescriptionshort":"Krishna Export is a manufacturer and exporter of coriander seed powder and ground coriander in India.Krishna Export and exports coriander seed powder...",
+                "subimage":Corianderpowder,
+                "subpath":"/product/spice/7"
             },
         ]
     
@@ -248,6 +278,20 @@ const product=[
                 "subdescriptionshort":"Green chillies are hollow, and the pith and seeds are the hottest part. Green chillies have a different flavour to other coloured chillies. Chilli heat ...",
                 "subimage":GreenChilli,
                 "subpath":"/product/vegitable/2"
+            },
+            {
+                "subproductname":"Kesar Mango" ,
+                "subdescription":"Kesar Mango is a medium-sized fruit with a thin skin and a sweet, juicy flesh. It is one of the top varieties of mangoes in India, prized for its rich flavor and aroma. The fruit has a yellowish-green color when unripe, but turns golden yellow with a tinge of orange when fully ripe.",
+                "subdescriptionshort":"Kesar Mango is a medium-sized fruit with a thin skin and a sweet, juicy flesh. It is one of the top varieties of mangoes in India, prized for its rich flavor ...",
+                "subimage":Kesar,
+                "subpath":"/product/vegitable/3"
+            },
+            {
+                "subproductname":"Aphonso Mango" ,
+                "subdescription":"The fruits generally weigh between 150 and 300 grams (5.3 and 10.6 oz), have a rich, creamy, tender texture and delicate, non-fibrous, juicy pulp. As the fruit matures, the skin of an Alphonso mango turns golden-yellow with a tinge of red across the top of the fruit.",
+                "subdescriptionshort":"The fruits generally weigh between 150 and 300 grams (5.3 and 10.6 oz), have a rich, creamy, tender texture and delicate, non-fibrous, juicy pulp. As the fruit....",
+                "subimage":Alphanso,
+                "subpath":"/product/vegitable/4"
             },
         ]
     },
