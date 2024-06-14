@@ -73,7 +73,10 @@ swiper-slide img {
   height: 100%;
   object-fit: cover;
 }
-
+.subProductImage{
+  height: 50%;
+  width: 50%;
+}
 .nav-btn {
   display: block;
   position: absolute;
@@ -125,6 +128,9 @@ font-weight: 600;
 .link{
   cursor: pointer;
 }
+.logoFooter{
+  border-radius: 50%;
+}
 .article {
   height: 180px;
   background-repeat: no-repeat;
@@ -138,6 +144,20 @@ font-weight: 600;
   font-size: 80px;
   color: white;
   text-align: center;
+}
+.imagesubtext{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+.imagegallery{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.aboutImage{
+  height: 100%;
+  object-fit: contain;
 }
 @media only screen and (max-width: 600px) {
   .nameMain{
@@ -156,5 +176,14 @@ font-weight: 600;
     font-size: 50px;
     color: white;
     text-align: center;
+  }
+  .subProductImage{
+    height: 80%;
+    width: 80%;
+  }
+  .imagesubtext{
+    color: white;
+    text-align: center;
+    font-size: 20px;
   }
 }

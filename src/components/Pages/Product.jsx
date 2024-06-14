@@ -26,15 +26,23 @@ const Product = () => {
   };
   return (
     <>
-      <Typography
+      {/* <Typography
         variant="h3"
         align="center"
         className="nameMain"
         sx={{ marginBottom: 2, marginTop: 2 }}
       >
         Our<span className="name1"> Products</span>
-        {/* <span className="name2"> Export</span> */}
-      </Typography>
+      </Typography> */}
+      <article
+        className="article "
+        style={{
+          marginBottom:8,
+          backgroundImage: `url(https://t4.ftcdn.net/jpg/07/09/20/99/240_F_709209908_p1JHxeXXV5c2IpdBlaZcUgfFpxhbvH6F.jpg)`,
+        }}
+      >
+        <h1 className="imageText">Our Products</h1>
+      </article>
       <Box>
         <Grid
           container
@@ -78,15 +86,6 @@ const Product = () => {
               </Item>
             </Grid>
           ))}
-          {/* <Grid item xs={12} lg={3}>
-    <Item>xs=6 md=4</Item>
-  </Grid>
-  <Grid item xs={12} lg={3}>
-    <Item>xs=6 md=4</Item>
-  </Grid>
-  <Grid item xs={12} lg={3}>
-    <Item>xs=6 md=8</Item>
-  </Grid> */}
         </Grid>
       </Box>
     </>

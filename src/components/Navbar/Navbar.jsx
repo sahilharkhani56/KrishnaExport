@@ -21,7 +21,7 @@ import {createTheme} from "@mui/material/styles";
 import { ThemeProvider } from '@emotion/react';
 import { useNavigate } from 'react-router-dom';
 const drawerWidth = 240;
-const navItems = [['Home','/'], ['About US','/about'], ['Gallery','/gallery'], ['Products','/product'], ['Get Inquiry','/inquire'], ['Contact','/contact']];
+const navItems = [['Home','/'], ['About US','/about'], ['Gallery','/gallery'], ['Products','/product'], ['Contact','/contact']];
 function Navbar(props) {
     const navigateTo=useNavigate();
   const { window } = props;

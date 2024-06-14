@@ -22,7 +22,7 @@ const Footer = () => {
   return (
     <>
       <Box
-        sx={{ width: "100%", backgroundColor: "#F6F5F2", padding: "15px" ,bottom:0,top: 'auto'}}
+        sx={{ width: "100%", backgroundColor: "#F6F5F2", padding: "15px" ,bottom:0,top: 'auto',marginTop:4}}
         alignItems="center"
         justifyContent="center"
         display={"flex"}
@@ -34,7 +34,7 @@ const Footer = () => {
          
         >
           <Item sx={{background:'#F6F5F2', boxShadow:'none'}}> 
-            <img src={logo} height={"200px"}></img>
+            <img src={logo} height={"200px"} className="logoFooter"></img>
           </Item>
           <Item sx={{background:'#F6F5F2', boxShadow:'none'}}>
             <List>
@@ -60,7 +60,7 @@ const Footer = () => {
             <Typography variant="h6" style={{marginBottom:4}} sx={{color:'black'}}>CONTACT US</Typography>
                 <ListItem sx={{padding:0}} ><Typography>Krishna Export </Typography></ListItem>
                 <ListItem sx={{padding:0}}><Typography>Rajkot,Gujarat</Typography></ListItem>
-                <ListItem sx={{padding:0}}><Typography>+91918238661352</Typography></ListItem>
+                <ListItem sx={{padding:0}}><Typography>+918238661352</Typography></ListItem>
                 <ListItem sx={{padding:0}}><Typography>info@krishna.com</Typography></ListItem>
                 <ListItem sx={{padding:0}}>
                 <Box sx={{ display: 'flex', alignItems: 'center', mr: 2 }}>

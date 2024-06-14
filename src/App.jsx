@@ -8,7 +8,6 @@ import Footer from "./components/Footer/Footer";
 import About from "./components/Pages/About";
 import Contact from "./components/Pages/Contact";
 import Gallery from "./components/Pages/Gallery";
-import Inquiry from "./components/Pages/Inquiry";
 import Product from "./components/Pages/Product";
 import SubProduct from "./components/Pages/SubProduct";
 import { SingleProduct } from "./components/Pages/SingleProduct";
@@ -25,7 +24,6 @@ const App = () => {
          <Route path="/about" element={<About />} />
          <Route path="/contact" element={<Contact />} />
          <Route path="/gallery" element={<Gallery/>} />
-         <Route path="/inquire" element={<Inquiry />} />
          <Route path="/product" element={<Product />} />
          <Route path="/product/:subproduct" element={<SubProduct />} />
          <Route path="/product/:subproduct/:productnumber" element={<SingleProduct/>}/>
