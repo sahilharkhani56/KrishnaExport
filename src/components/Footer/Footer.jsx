@@ -52,7 +52,7 @@ const Footer = () => {
                 <ListItem sx={{padding:0}} className="link"><Typography>Seeds</Typography></ListItem>
                 <ListItem sx={{padding:0}} className="link"><Typography>Herbs</Typography></ListItem>
                 <ListItem sx={{padding:0}} className="link"><Typography>Grains</Typography></ListItem>
-                <ListItem sx={{padding:0}}className="link"><Typography>Dehydrate Powders</Typography></ListItem>
+                <ListItem sx={{padding:0}}className="link"><Typography>Dehydrate Flakes and Powders</Typography></ListItem>
             </List>
           </Item>
           <Item sx={{background:'#F6F5F2', boxShadow:'none'}}>

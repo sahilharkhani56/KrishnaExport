@@ -259,7 +259,7 @@ const product=[
         ]
     },
     {
-        "productName":"Vegitables",
+        "productName":"Fruits and Vegitables ",
         "image":vegitables0,
         "path":"/product/vegitable",
         "description":"A vegetable is the edible portion of a plant. Vegetables are usually grouped according to the portion of the plant that is eaten such as leaves (lettuce), stem (celery), roots (carrot), tubers (potato), bulbs (onion) and flowers (broccoli). A fruit is the mature ovary of a plant.",
@@ -287,7 +287,7 @@ const product=[
                 "subpath":"/product/vegitable/3"
             },
             {
-                "subproductname":"Aphonso Mango" ,
+                "subproductname":"Alphonso Mango" ,
                 "subdescription":"The fruits generally weigh between 150 and 300 grams (5.3 and 10.6 oz), have a rich, creamy, tender texture and delicate, non-fibrous, juicy pulp. As the fruit matures, the skin of an Alphonso mango turns golden-yellow with a tinge of red across the top of the fruit.",
                 "subdescriptionshort":"The fruits generally weigh between 150 and 300 grams (5.3 and 10.6 oz), have a rich, creamy, tender texture and delicate, non-fibrous, juicy pulp. As the fruit....",
                 "subimage":Alphanso,
