@@ -84,7 +84,14 @@ const SubProduct = () => {
                 sx={{ boxShadow: "none" }}
                 onClick={(e) => selectproduct(e, index.subpath)}
               >
-                <Card sx={{ maxWidth: 345 }}>
+                <Card sx={{
+                    maxWidth: 345,
+                    "&:hover": {
+                      ".MuiCardMedia-root": {
+                        transform: "scale3d(1.1, 1.1, 1)",
+                      },
+                    },
+                  }}>
                   <CardMedia
                     component="img"
                     alt="green iguana"

@@ -19,7 +19,7 @@ const Gallery = () => {
       >
         <h1 className="imageText">Gallery</h1>
       </article>
-      <Grid container spacing={4} sx={{padding:4}}>
+      <Grid container spacing={0} sx={{padding:4}}>
       {images.map((index)=>(
         <Grid item xs={6} lg={3} key={index}>
           <Item sx={{boxShadow:"none"}}>

@@ -37,7 +37,7 @@ const Product = () => {
       <article
         className="article "
         style={{
-          marginBottom:8,
+          marginBottom: 8,
           backgroundImage: `url(https://t4.ftcdn.net/jpg/07/09/20/99/240_F_709209908_p1JHxeXXV5c2IpdBlaZcUgfFpxhbvH6F.jpg)`,
         }}
       >
@@ -58,7 +58,16 @@ const Product = () => {
                 sx={{ boxShadow: "none" }}
                 onClick={(e) => selectproduct(e, index.path)}
               >
-                <Card sx={{ maxWidth: 345 }}>
+                <Card
+                  sx={{
+                    maxWidth: 345,
+                    "&:hover": {
+                      ".MuiCardMedia-root": {
+                        transform: "scale3d(1.1, 1.1, 1)",
+                      },
+                    },
+                  }}
+                >
                   <CardMedia
                     component="img"
                     alt="green iguana"

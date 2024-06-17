@@ -57,7 +57,7 @@ function Navbar(props) {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'colomn'}}>
       <CssBaseline />
-      <AppBar component="nav" style={{ background: '#97BE5A' }}>
+      <AppBar component="nav" style={{ background: 'rgb(241, 241, 241)' }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -71,13 +71,13 @@ function Navbar(props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 0, display: { xs: 'none', sm: 'block' }, fontWeight: 'bold' }}
+            sx={{ flexGrow: 0, display: { xs: 'none', sm: 'block' }, fontWeight: 'bold',color:'#0d141a' }}
           >
             Krishna Export
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }} style={{ marginLeft: '60px' }}>
             {navItems.map((item) => (
-              <Button key={item[0]}  sx={{ color: '#fff' }} onClick={(e)=>selectOption(e,item[1])}>
+              <Button key={item[0]}  sx={{ color: '#0d141a' }} onClick={(e)=>selectOption(e,item[1])}>
                 {item[0]}
               </Button>
             ))}

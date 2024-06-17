@@ -83,8 +83,7 @@ const Home = () => {
       <Box sx={{ margin: 2 }}>
         <Box>
           <Typography variant="h3" align="center" className="nameMain">
-            Welcome To<span className="name1"> Krishna</span>
-            <span className="name2"> Export</span>
+            Welcome To<span className="name1"> Krishna Export</span>
           </Typography>
         </Box>
         <Box className="aboutHome" align="center" >
