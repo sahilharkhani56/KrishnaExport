@@ -35,7 +35,7 @@ const Product = () => {
       <Box>
         <Grid
           container
-          spacing={3}
+          spacing={2}
           direction={isLargerThan800 ? "row" : "column"}
           alignItems="center"
           justify="center"
@@ -54,6 +54,8 @@ const Product = () => {
                   viewport={{ once: true }}
                 >
                   <Card
+                    component={motion.div}
+                    whileHover={{ scale: 1.05 }}
                     sx={{
                       borderRadius: "15px",
                       maxWidth: 345,

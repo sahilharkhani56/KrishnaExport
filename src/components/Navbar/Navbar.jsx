@@ -71,7 +71,7 @@ function Navbar(props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 0, display: { xs: 'none', sm: 'block' }, fontWeight: 'bold',color:'#0d141a' }}
+            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontWeight: 'bold',color:'#0d141a' }}
           >
             Krishna Export
           </Typography>
@@ -91,7 +91,7 @@ function Navbar(props) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true, 
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },
