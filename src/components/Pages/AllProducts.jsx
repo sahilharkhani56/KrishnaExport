@@ -175,7 +175,7 @@ const product=[
         "image":Peanuts,
         "path":"/product/peanut",
         "description":"Peanuts (Arachis hypogaea) are a legume that originated in South America. They go by a variety of names, such as groundnuts, earthnuts, and goobers. Despite their name, peanuts are unrelated to tree nuts. As a legume, they're related to beans, lentils, and soy.",
-        "descriptionshort":"Peanuts (Arachis hypogaea) are a legume that originated in South America. They go by a variety of names, such as groundnuts, earthnuts, and goobers. Despite ...",
+        "descriptionshort":"Peanuts (Arachis hypogaea) are a legume that originated in South America. They go by a variety of names, such as groundnuts, earthnuts, and goobers.  ...",
         "subproduct":[
             {
                 "subproductname":"Peanuts" ,

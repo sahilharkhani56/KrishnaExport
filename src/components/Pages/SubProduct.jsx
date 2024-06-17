@@ -1,20 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import product from "./AllProducts";
-import {
-  Box,
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Divider,
-  Grid,
-  Paper,
-  Typography,
-  styled,
-} from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardMedia, Divider, Grid, Paper, Typography, styled } from "@mui/material";
 import { useMediaQuery } from "@chakra-ui/react";
+import { motion } from "framer-motion";
+import product from "./AllProducts";
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
@@ -22,20 +12,21 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: "center",
   color: theme.palette.text.secondary,
 }));
+
 const SubProduct = () => {
   const { pathname } = useLocation();
   const [data, setdata] = useState([]);
   const [subdata, setSubdata] = useState([]);
   const navigateTo = useNavigate();
   const [isLargerThan800] = useMediaQuery("(min-width: 760px)");
-  // console.log(pathname);
+
   const selectproduct = (e, path) => {
     navigateTo(path);
   };
+
   useEffect(() => {
     if (pathname) {
       for (var i = 0; i < product.length; i++) {
-        // console.log(product[i].pathname);
         if (product[i].path === pathname) {
           setdata(product[i]);
           setSubdata(product[i].subproduct);
@@ -43,32 +34,33 @@ const SubProduct = () => {
       }
     }
   }, [pathname]);
+
   return (
     <>
       <article
-        className="article "
+        className="article"
         style={{
           backgroundImage: `url(https://t4.ftcdn.net/jpg/06/91/50/87/240_F_691508776_YcA9ykZmwiRK7RBGugBRdUVRb4Ar8EXW.jpg)`,
         }}
       >
         <h1 className="imageText">{data?.productName}</h1>
       </article>
-      <Box sx={{marginBottom:2}}>
+      <Box sx={{ marginBottom: 2 }}>
         <Grid container spacing={2}>
           <Grid item xs={12} lg={6}>
-            <Item sx={{padding:4,boxShadow:'none'}}>
-        <Typography variant="h4">{data?.productName}</Typography>
-        <Typography>{data.description}</Typography>
+            <Item sx={{ padding: 4, boxShadow: 'none' }}>
+              <Typography variant="h4">{data?.productName}</Typography>
+              <Typography>{data.description}</Typography>
             </Item>
           </Grid>
           <Grid item xs={12} lg={6}>
-            <Item sx={{padding:4,boxShadow:'none'}}>
-              <img src={data.image} className="subProductImage"></img>
+            <Item sx={{ padding: 4, boxShadow: 'none' }}>
+              <img src={data.image} className="subProductImage" alt={data.productName}></img>
             </Item>
           </Grid>
         </Grid>
       </Box>
-      <Divider sx={{marginBottom:4}}></Divider>
+      <Divider sx={{ marginBottom: 4 }}></Divider>
       <Box>
         <Grid
           container
@@ -79,12 +71,20 @@ const SubProduct = () => {
         >
           {subdata.map((index) => (
             <Grid item xs={12} lg={3} key={index.subproductname}>
-              <Item
-                className="innerProduct"
-                sx={{ boxShadow: "none" }}
-                onClick={(e) => selectproduct(e, index.subpath)}
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
               >
-                <Card sx={{
+                <Item
+                  className="innerProduct"
+                  sx={{ boxShadow: "none" }}
+                  onClick={(e) => selectproduct(e, index.subpath)}
+                >
+                  <Card sx={{
+                    borderRadius: '15px',
                     maxWidth: 345,
                     "&:hover": {
                       ".MuiCardMedia-root": {
@@ -92,31 +92,32 @@ const SubProduct = () => {
                       },
                     },
                   }}>
-                  <CardMedia
-                    component="img"
-                    alt="green iguana"
-                    height="140"
-                    image={index.subimage}
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      {index.subproductname}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      {index.subdescriptionshort}
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button
-                      size="small"
-                      className="itemProduct"
-                      onClick={(e) => selectproduct(e, index.subpath)}
-                    >
-                      Read More
-                    </Button>
-                  </CardActions>
-                </Card>
-              </Item>
+                    <CardMedia
+                      component="img"
+                      alt={index.subproductname}
+                      height="140"
+                      image={index.subimage}
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        {index.subproductname}
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                        {index.subdescriptionshort}
+                      </Typography>
+                    </CardContent>
+                    <CardActions>
+                      <Button
+                        size="small"
+                        className="itemProduct"
+                        onClick={(e) => selectproduct(e, index.subpath)}
+                      >
+                        Read More
+                      </Button>
+                    </CardActions>
+                  </Card>
+                </Item>
+              </motion.div>
             </Grid>
           ))}
         </Grid>
