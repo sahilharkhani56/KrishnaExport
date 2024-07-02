@@ -14,11 +14,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import {createTheme} from "@mui/material/styles";
-import { ThemeProvider } from '@emotion/react';
 import { useNavigate } from 'react-router-dom';
 const drawerWidth = 240;
 const navItems = [['Home','/'], ['About US','/about'], ['Gallery','/gallery'], ['Products','/product'], ['Contact','/contact']];
@@ -62,7 +57,7 @@ function Navbar(props) {
           <IconButton
             color="inherit"
             aria-label="open drawer"
-            edge="end"
+            edge="start"
             onClick={handleDrawerToggle}
             sx={{ display: { sm: 'none' },color:'black' }}
           >
@@ -71,7 +66,7 @@ function Navbar(props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontWeight: 'bold',color:'#0d141a' }}
+            sx={{ flexGrow: 1, display: {sm: 'block' }, fontWeight: 'bold',color:'#0d141a' }}
           >
             Krishna Export
           </Typography>

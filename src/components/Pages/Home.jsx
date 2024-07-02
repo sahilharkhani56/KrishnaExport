@@ -1,9 +1,6 @@
 import { Box, Divider, Typography } from "@mui/material";
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import i1 from "../../assets/img/w1seeds.jpeg";
-import i2 from "../../assets/img/w2seeds.jpeg";
 import i3 from "../../assets/img/w3seeds.jpeg";
 import i4 from "../../assets/img/w4seeds.jpeg";
 import i5 from "../../assets/img/w5seeds.jpeg";

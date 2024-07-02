@@ -5,12 +5,10 @@ import {
   Stack,
   Typography,
   IconButton,
-  Grid,
 } from "@mui/material";
-import React from "react";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import logo from "../../assets/img/Krishna Export.png";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -102,19 +100,16 @@ const Footer = () => {
                 >
                   PRODUCTS
                 </Typography>
-                <ListItem sx={{ padding: 0 }} className="link">
+                <ListItem sx={{ padding: 0 }} className="link" onClick={(e) => selectOption(e, "/product/spice")}>
                   <Typography>Spices</Typography>
                 </ListItem>
-                <ListItem sx={{ padding: 0 }} className="link">
+                <ListItem sx={{ padding: 0 }} className="link" onClick={(e) => selectOption(e, "/product/seed")}>
                   <Typography>Seeds</Typography>
                 </ListItem>
-                <ListItem sx={{ padding: 0 }} className="link">
-                  <Typography>Herbs</Typography>
-                </ListItem>
-                <ListItem sx={{ padding: 0 }} className="link">
+                <ListItem sx={{ padding: 0 }} className="link" onClick={(e) => selectOption(e, "/product/grain")}>
                   <Typography>Grains</Typography>
                 </ListItem>
-                <ListItem sx={{ padding: 0 }} className="link">
+                <ListItem sx={{ padding: 0 }} className="link" onClick={(e) => selectOption(e, "/product/dehydrated")}>
                   <Typography>Dehydrate Flakes and Powders</Typography>
                 </ListItem>
               </List>
@@ -148,13 +143,13 @@ const Footer = () => {
                 </ListItem>
                 <ListItem sx={{ padding: 0 }}>
                   <Box sx={{ display: "flex", alignItems: "center", mr: 2 }}>
-                    <IconButton color="inherit">
+                    <IconButton color="inherit" href="https://www.facebook.com/krutagnya.savaliya?mibextid=kFxxJD" target="_blank">
                       <FacebookIcon />
                     </IconButton>
-                    <IconButton color="inherit">
+                    <IconButton color="inherit" href="https://www.instagram.com/krishnaexportindia2020?igsh=MTZzYWU3a3h4eGczeA==" target="_blank">
                       <TwitterIcon />
                     </IconButton>
-                    <IconButton color="inherit">
+                    <IconButton color="inherit" href="https://www.instagram.com/krishnaexportindia2020?igsh=MTZzYWU3a3h4eGczeA==" target="_blank">
                       <InstagramIcon />
                     </IconButton>
                   </Box>

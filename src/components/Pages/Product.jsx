@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Box, Grid, Paper, Typography, Card, CardActions, CardContent, CardMedia, Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
@@ -37,12 +37,14 @@ const Product = () => {
           container
           spacing={2}
           direction={isLargerThan800 ? "row" : "column"}
+          // direction={'row'}
           alignItems="center"
           justify="center"
         >
           {product.map((index) => (
-            <Grid item xs={12} lg={3} key={index.productName}>
+            <Grid item xs={12} lg={3} md={4} sm={6} key={index.productName}>
               <Item
+              
                 className="innerProduct"
                 sx={{ boxShadow: "none" }}
                 onClick={(e) => selectproduct(e, index.path)}

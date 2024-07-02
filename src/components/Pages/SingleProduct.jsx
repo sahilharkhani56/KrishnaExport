@@ -1,5 +1,5 @@
 import { Box, Grid, Paper, Typography, styled } from '@mui/material';
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useLocation, useParams } from 'react-router-dom';
 import product from './AllProducts';
 const Item = styled(Paper)(({ theme }) => ({

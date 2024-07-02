@@ -1,21 +1,17 @@
 import {
   Avatar,
-  Box,
-  Chip,
   Grid,
   List,
   ListItem,
   ListItemAvatar,
   ListItemText,
   Paper,
-  Typography,
   styled,
 } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import BusinessIcon from "@mui/icons-material/Business";
-import GoogleMapReact from 'google-map-react';
 import { useMediaQuery } from "@chakra-ui/react";
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -79,40 +75,6 @@ const Contact = () => {
           </Item>
         </Grid>
       </Grid>
-
-      {/* <Grid container spacing={sz} sx={{ padding: 4 }}>
-        <Grid item lg={4} xs={12}>
-          <Item sx={{ paddingTop: 2, paddingBottom: 2 }}>
-            <Typography>Call Us</Typography>
-
-            <Chip
-              avatar={<CallIcon />}
-              label="+918238661352"
-              variant="outlined"
-            />
-          </Item>
-        </Grid>
-        <Grid item lg={4} xs={12}>
-          <Item sx={{ paddingTop: 2, paddingBottom: 2 }}>
-            <Typography>Mail Us</Typography>
-            <Chip
-              avatar={<EmailIcon />}
-              label="info@krishnaexportindia.com"
-              variant="outlined"
-            />
-          </Item>
-        </Grid>
-        <Grid item lg={4} xs={12}>
-          <Item sx={{ paddingTop: 2, paddingBottom: 2 }}>
-            <Typography>Address</Typography>
-            <Chip
-              avatar={<BusinessIcon />}
-              label="Rajkot,Gujarat"
-              variant="outlined"
-            />
-          </Item>
-        </Grid>
-      </Grid> */}
     </>
   );
 };

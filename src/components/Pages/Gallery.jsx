@@ -1,6 +1,5 @@
 import { Grid, Paper, styled } from "@mui/material";
 import images from "./Images";
-import React from "react";
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,

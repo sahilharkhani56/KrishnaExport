@@ -1,6 +1,5 @@
 import seed0 from '../../assets/img/0seed.jpeg'
 import grains0 from '../../assets/img/0grain.jpeg'
-import herb0 from '../../assets/img/0herb.jpeg'
 import pulse0 from '../../assets/img/0pulse.jpeg'
 import spice0 from '../../assets/img/0spice.jpeg'
 import vegitables0 from '../../assets/img/vegitables.jpg'
@@ -198,7 +197,7 @@ const product=[
         "image":Coconut,
         "path":"/product/coconut",
         "description":"Coconut is the fruit of a tropical palm plant. It has a hard shell, edible white flesh and clear liquid, sometimes referred to as “water,” which is often used as a beverage. Coconut flesh or “meat” is aromatic, chewy in texture and rich in taste.",
-        "descriptionshort":"Coconut is the fruit of a tropical palm plant. It has a hard shell, edible white flesh and clear liquid, sometimes referred to as “water,”...",
+        "descriptionshort":"Coconut is the fruit of a tropical palm plant. It has a hard shell, edible white flesh and clear liquid, sometimes referred to as “water,”which is often ...",
         "subproduct":[
             {
                 "subproductname":"Coconut" ,

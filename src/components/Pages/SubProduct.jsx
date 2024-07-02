@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Box, Button, Card, CardActions, CardContent, CardMedia, Divider, Grid, Paper, Typography, styled } from "@mui/material";
 import { useMediaQuery } from "@chakra-ui/react";
@@ -93,7 +93,7 @@ const SubProduct = () => {
             justify="center"
           >
             {subdata.map((index) => (
-              <Grid item xs={12} lg={3} key={index.subproductname}>
+              <Grid item xs={12} lg={3} md={4} sm={6} key={index.subproductname}>
                 <motion.div variants={itemVariants}>
                   <Item
                     className="innerProduct"
